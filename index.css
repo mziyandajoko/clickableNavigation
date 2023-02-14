@@ -1,9 +1,21 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #000000;
   color: #FFFFFF;
-  margin: 0 auto;
+  font-family: "lato", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 3rem;
+  line-height: 1.7;
+  box-sizing: border-box;
 }
 
+.navigation {
+  position: relative;
+}
 .navigation__list {
   list-style: none;
 }
