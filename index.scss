@@ -4,4 +4,33 @@ $color__white: #FFFFFF;
 
 body{
  background-color: $color__black;
+ color: $color__white;
+ margin: 0 auto;
+}
+
+.navigation{
+
+&__icon{
+
+}
+&__background{
+
+}
+
+&__nav{
+  
+}
+
+&__list{
+  list-style: none;
+}
+&__item{
+  
+}
+&__link{
+  color: $color__white;
+  text-decoration: none;
+
+}
+
 }
