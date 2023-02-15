@@ -17,6 +17,9 @@ body {
   position: relative;
   background-color: orangered;
 }
+.navigation__checkbox {
+  display: none;
+}
 .navigation__button {
   background-color: #FFFFFF;
   height: 7rem;
@@ -25,7 +28,8 @@ body {
   top: 6rem;
   right: 6rem;
   border-radius: 50%;
-  z-index: 10;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  z-index: 15;
 }
 .navigation__background {
   content: "";
@@ -37,15 +41,15 @@ body {
   width: 6rem;
   border-radius: 50%;
   background-image: radial-gradient(#e9eaec, #4d5964);
-  z-index: 8;
-  transform: scale(80);
+  z-index: 5;
 }
 .navigation__nav {
   height: 100vh;
-  width: 100%;
+  width: 0;
+  opacity: 0;
   position: fixed;
   position: absolute;
-  z-index: 9;
+  z-index: 10;
 }
 .navigation__list {
   list-style: none;
@@ -77,4 +81,11 @@ body {
   background-position: 100%;
   color: #000000;
   transform: rotateX(1rem);
+}
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80);
+}
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
